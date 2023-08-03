@@ -1,0 +1,116 @@
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+.navbar {
+	position: absolute;
+	width: 100%;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+.navbar-container {
+	width: 90%;
+	margin: auto;
+	padding: 0;
+	display: flex;
+	font-family: Georgia;
+}
+
+.navbar-logo {
+	font-size: 35px;
+	font-family: "poppinsextrabold";
+	letter-spacing: 0.8px;
+}
+
+.navbar-menu {
+	margin: 0;
+	display: list-item;
+	align-items: center;
+	list-style: none;
+}
+
+.menu {
+	margin: 0;
+		position: fixed;
+		height: 50px;
+		list-style: none;
+        display: block;
+        text-align: center;
+		top: 0px;
+		left: -50%;
+        transition: 1s all;
+		background-color: rgb(255, 255, 255);
+		height: 100%;
+		width: 100%;
+		z-index: 20;
+}
+
+.navbar-menu ul a {
+	text-decoration: none;
+	color: rgb(14, 14, 14);
+}
+
+.navbar-menu ul a li {
+	list-style: none;
+	font-size: 15px;
+	font-family: "poppinssemibold";
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	border-radius: 15px;
+	cursor: pointer;
+	transform: translateY(12px);
+	transition: all 0.4s ease;
+}
+
+.navbar-menu ul a li img {
+	margin: auto;
+	padding: 0;
+	transform: translateY(-12px);
+	height: 5px;
+	justify-content: center;
+	visibility: hidden;
+}
+
+.navbar-menu ul a li:hover img {
+	visibility: visible;
+	justify-content: center;
+}
+
+.navbar-menu .social-media i {
+	color: rgb(18, 18, 18);
+	margin-left: 20px;
+	font-size: 20px;
+	cursor: pointer;
+	transition: all 0.4s ease;
+}
+
+.navbar-menu .social-media i:hover {
+	color:rgb(134, 174, 117);
+}
+
+
+.btn {
+	display: block;
+	z-index: 50;
+	position:fixed;
+	top: 10px;
+	left: 10px;
+	font-size: 20px;
+	visibility: visible;
+}
+
+#check {
+	display: block;
+	position: fixed;
+	z-index: 50;
+	top: 10px;
+	left: 10px;
+	visibility: visible;
+}
+
+#check:checked ~ .menu {
+	left: 0;
+}
